@@ -9,7 +9,8 @@
     "text"
   ],
   "require": [
-    "babel-core/register"
+    "babel-register"
   ],
-  "produce-source-map": true
+  "sourceMap": false,
+  "instrument": false
 }

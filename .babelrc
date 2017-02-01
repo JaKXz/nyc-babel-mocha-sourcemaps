@@ -1,4 +1,8 @@
 {
   "presets": ["env"],
-  "sourceMaps": "inline"
+  "env": {
+    "test": {
+      "plugins": ["istanbul"]
+    }
+  }
 }

@@ -4,7 +4,7 @@
   "description": "testing nyc with babel and mocha to check line numbers reported in stack traces",
   "main": "index.js",
   "scripts": {
-    "test": "nyc mocha"
+    "test": "cross-env NODE_ENV=test nyc mocha"
   },
   "repository": {
     "type": "git",
@@ -18,10 +18,12 @@
   "homepage": "https://github.com/pghalliday/nyc-babel-mocha-sourcemaps#readme",
   "devDependencies": {
     "babel-core": "^6.22.1",
+    "babel-plugin-istanbul": "^3.1.2",
     "babel-preset-env": "^1.1.8",
+    "babel-register": "^6.22.0",
     "chai": "^3.5.0",
+    "cross-env": "^3.1.4",
     "mocha": "^3.2.0",
-    "nyc": "^10.1.2",
-    "source-map-support": "^0.4.11"
+    "nyc": "^10.1.2"
   }
 }
