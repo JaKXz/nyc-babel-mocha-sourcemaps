@@ -1,4 +1,10 @@
 {
+  "all": true,
+  "sourceMap": false,
+  "instrument": false,
+  "include": [
+    "src"
+  ],
   "check-coverage": true,
   "lines": 100,
   "statements": 100,
@@ -9,7 +15,6 @@
     "text"
   ],
   "require": [
-    "babel-core/register"
-  ],
-  "produce-source-map": true
+    "babel-register"
+  ]
 }
